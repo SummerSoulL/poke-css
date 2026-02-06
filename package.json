@@ -1,18 +1,15 @@
 {
   "name": "@summersoull/poke-css",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A CSS animated Poké Ball component",
   "author": "summersoull",
   "license": "MIT",
-
   "files": [
     "dist"
   ],
-
   "main": "dist/poke-css.umd.js",
   "module": "dist/poke-css.mjs",
   "style": "dist/poke-css.css",
-
   "exports": {
     ".": {
       "import": "./dist/poke-css.mjs",
@@ -20,11 +17,9 @@
       "style": "./dist/poke-css.css"
     }
   },
-
   "scripts": {
     "build": "vite build"
   },
-
   "devDependencies": {
     "vite": "^5.0.0"
   }
