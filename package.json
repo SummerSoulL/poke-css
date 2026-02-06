@@ -8,13 +8,13 @@
   "files": [
     "dist"
   ],
-  "main": "./dist/poke-css.umd.js",
-  "module": "./dist/poke-css.mjs",
+  "main": "./dist/poke-css.umd.cjs",
+  "module": "./dist/poke-css.js",
   "style": "./dist/poke-css.css",
   "exports": {
     ".": {
-      "import": "./dist/poke-css.mjs",
-      "require": "./dist/poke-css.umd.js"
+      "import": "./dist/poke-css.js",
+      "require": "./dist/poke-css.umd.cjs"
     }
   },
   "peerDependencies": {
