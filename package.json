@@ -15,7 +15,8 @@
     ".": {
       "import": "./dist/poke-css.js",
       "require": "./dist/poke-css.umd.cjs"
-    }
+    },
+    "./style.css": "./dist/poke-css.css"
   },
   "peerDependencies": {
     "vue": "^3.0.0"

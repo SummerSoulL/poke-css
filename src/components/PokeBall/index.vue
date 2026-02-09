@@ -9,6 +9,8 @@
 </template>
 
 <script setup lang="ts">
+import './poke-ball.css'
+
 /**
  * 精灵球组件 Props
  * size  : 控制整体大小（px）
@@ -31,57 +33,3 @@ export default {
   name: 'PokeBall'
 }
 </script>
-
-<style scoped>
-.pokeball {
-  width: var(--size);
-  height: var(--size);
-  border-radius: 50%;
-  position: relative;
-  background: linear-gradient(
-    to bottom,
-    #ee1515 0%,
-    #ee1515 50%,
-    #f5f5f5 50%,
-    #f5f5f5 100%
-  );
-  border: 6px solid #000;
-  animation: shake var(--speed) infinite;
-  box-sizing: border-box;
-}
-
-/* 中线 */
-.pokeball::before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 0;
-  width: 100%;
-  height: 6px;
-  background: #000;
-  transform: translateY(-50%);
-}
-
-/* 中心按钮 */
-.pokeball::after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 28%;
-  height: 28%;
-  background: #fff;
-  border-radius: 50%;
-  border: 6px solid #000;
-  transform: translate(-50%, -50%);
-}
-
-@keyframes shake {
-  0%   { transform: rotate(0); }
-  20%  { transform: rotate(-10deg); }
-  40%  { transform: rotate(10deg); }
-  60%  { transform: rotate(-10deg); }
-  80%  { transform: rotate(10deg); }
-  100% { transform: rotate(0); }
-}
-</style>
